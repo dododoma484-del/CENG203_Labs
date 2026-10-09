@@ -6,7 +6,8 @@ int main() // the ONLY main() of the project
 int choice;
 do {
 cout << "\n===== CENG203 Data Structures Lab =====" << endl;
-cout << " 2. Week 2 - Project structure test" << endl;
+cout << " 2. Week 2 - Project structure test" << endl;  
+cout << " 3. Week 3 - Linked lists" << endl; 
 cout << " 0. Exit" << endl;
 cout << "Your choice: ";
 cin >> choice;
