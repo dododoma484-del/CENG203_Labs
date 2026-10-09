@@ -1,20 +1,21 @@
-// CENG203_Labs.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
-
-int main()
+#include "Labs/Labs.h" // Labs.h is in the Labs subfolder
+using namespace std;
+int main() // the ONLY main() of the project
 {
-    std::cout << "Hello World!\n";
+int choice;
+do {
+cout << "\n===== CENG203 Data Structures Lab =====" << endl;
+cout << " 2. Week 2 - Project structure test" << endl;
+cout << " 0. Exit" << endl;
+cout << "Your choice: ";
+cin >> choice;
+switch (choice) {
+case 2: runWeek02(); break;
+// case 3: runWeek03(); break; <- one new line per week
+case 0: cout << "Bye!" << endl; break;
+default: cout << "Invalid choice!" << endl;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+} while (choice != 0);
+return 0;
+}
